@@ -476,15 +476,220 @@ h3.my-profession {
     margin-bottom: 10px;
     text-align: center;
 }
-.certifications .certificate-item .certificate-item-inner:hover h4{
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: var(--text-black-900);
-    font-weight: 700;
-    text-transform: capitalize;
-}
 .certifications .certificate-item .certificate-item-inner p{
     font-size: 16px;
     color: var(--text-black-900);
     line-height: 25px;
+}
+.certifications .certificate-item .certificate-item-inner .icon img{
+  width: 100%;
+  height: 100%;
+}
+.certifications .certificate-item-inner .icon{
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: block;
+} 
+.project .container{
+  padding-bottom: 40px;
+}
+.project .project-heading{
+  flex : 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.project .project-heading h2{
+  color: var(--text-black-900);
+  font-weight: 500;
+}
+.project .project-item{
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-bottom: 30px;
+}
+.pj-img{
+  height: 14rem;
+  width: 17rem;
+}
+.project .project-item-inner{
+  border: 6px solid var(--bg-black-100);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.project .project-item-inner .project-img img{
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: block;
+} 
+.project .project-item-inner .project-img{
+  text-align: center;
+}
+.project .project-item-inner .buttons {
+  margin-bottom: 10px;
+}
+.project .project-item-inner .buttons .btn {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.contact-title{
+  color: var(--skin-color);
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.contact-sub-title{
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+.contact .contact-info-item{
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contact .contact-info-item .icon{
+  display: inline-block;
+}
+.contact .contact-info-item .icon .fa{
+  font-size: 25px;
+  color: var(--skin-color);
+}
+.contact .contact-info-item h4{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+}
+.contact .contact-info-item p{
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+  font-weight: 400;
+}
+.contact .contact-form{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact .contact-form .col-6{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.contact .contact-form .col-12{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact .contact-form .form-item{
+  margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control{
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control{
+  height: 140px;
+}
+.contact .contact-form  .btn{
+  height: 50px;
+  padding: 0 50px;
+}
+@media (max-width:1199px){
+  .aside{
+    left: -270px;
+  }
+  .main-content{
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item p span{
+    display: block;
+    margin-left: 0;
+  }
+}
+@media (max-width:991px){
+  .contact .contact-info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .home .home-info{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home-img{
+    display: none;
+  }
+}
+@media (max-width:847px){
+  .certifications .certificate-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .project .project-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+@media (max-width:767px){
+  .contact .contact-form .col-6,
+  .contact .contact-info-item,
+  .about .about-content .internship,
+  .about .about-content .education,
+  .about .about-content .skills,  
+  .about .about-content .personal-info{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+ 
+}
+@media (max-width: 360px){
+  .certifications .certificate-item .certificate-item-inner .icon img{
+  height: 170px;
+  width:230px;
+  }
+}
+@media (max-width: 335px){
+  .certifications .certificate-item .certificate-item-inner .icon img{
+    padding-right: 15px;
+  height: 170px;
+  width:234px;
+  }
+}
+@media (max-width: 321px){
+  .certifications .certificate-item .certificate-item-inner .icon img{
+  padding-right: 32px;
+  }
+}
+@media (max-width: 300px){
+  .certifications .certificate-item .certificate-item-inner .icon img{
+  padding-right: 45px;
+  }
+}
+@media (max-width: 290px){
+  .certifications .certificate-item .certificate-item-inner .icon img{
+  padding-right: 60px;
+  }
+}
+@media (max-width: 285px){
+  .certifications .certificate-item .certificate-item-inner .icon img{
+  padding-right: 85px;
+  }
+}
+@media (max-width: 280px){
+  .certifications .certificate-item .certificate-item-inner .icon img{
+  padding-right: 120px;
+  }
 }
