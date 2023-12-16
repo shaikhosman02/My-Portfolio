@@ -614,7 +614,7 @@ h3.my-profession {
     padding-left: 0;
   }
   .about .about-content .personal-info .info-item p span{
-    display: block;
+    /* display: block; */
     margin-left: 0;
   }
 }
@@ -641,6 +641,12 @@ h3.my-profession {
     max-width: 100%;
     margin: auto;
     margin-top: 10px;
+  }
+}
+@media (max-width:500px){
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 @media (max-width:767px){
