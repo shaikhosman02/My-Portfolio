@@ -7,6 +7,12 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" />
+    <link rel="stylesheet" href="css/skins/color-1.css"  class="alternate-style" title="color-1" disabled/>
+    <link rel="stylesheet" href="css/skins/color-2.css"  class="alternate-style" title="color-2" disabled/>
+    <link rel="stylesheet" href="css/skins/color-3.css"  class="alternate-style" title="color-3" disabled/>
+    <link rel="stylesheet" href="css/skins/color-4.css"  class="alternate-style" title="color-4" disabled/>
+    <link rel="stylesheet" href="css/skins/color-5.css"  class="alternate-style" title="color-5" disabled/>
+    <link rel="stylesheet" href="css/style-switcer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,16 +28,16 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Certifications</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#certificate"><i class="fa fa-list"></i>Certifications</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
         </div>
         </ul>
 
         <div class="main-content">
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -47,7 +53,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -93,7 +99,8 @@
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>LinkedIn :
-                                                <span>www.linkedin.com/shaikh-mohammed-osman-689029169/</span></p>
+                                                <span>www.linkedin.com/shaikh-mohammed-osman-689029169/</span>
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -169,7 +176,8 @@
                                                     <h4 class="timeline-title">Karnataka Secondary Education Examination
                                                         Board (PUC)</h4>
                                                     <p class="timeline-text">Shaheen Independent PU College, Kalaburagi.
-                                                        <br><b>Percentage : 78</b> </p>
+                                                        <br><b>Percentage : 78</b>
+                                                    </p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot">
@@ -180,7 +188,8 @@
                                                     <h4 class="timeline-title">Maharashtra State Board of Secondary
                                                         Education (SSC)</h4>
                                                     <p class="timeline-text">Mother Teressa High School, Mumbai.
-                                                        <br><b>Percentage : 89</b> </p>
+                                                        <br><b>Percentage : 89</b>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -197,9 +206,9 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> July 2023 – Current, Bengaluru
                                                     </h3>
-                                                    <h4 class="timeline-title">Full Stack Intern</h4>
+                                                    <h4 class="timeline-title">Full Stack Intern, KodNest</h4>
                                                     <p class="timeline-text">
-                                                    <ul style="list-style-type:disc;">
+                                                    <ul style="list-style-type:disc; color: var(--text-black-700);">
                                                         <li>Solid understanding of Core Java concepts, including control
                                                             constructs, loops, and strong proficiency in
                                                             Object-Oriented Programming (OOP).</li>
@@ -222,9 +231,10 @@
                                                         <i class="fa fa-calendar"></i>August 2022 – November 2022,
                                                         Bengaluru
                                                     </h3>
-                                                    <h4 class="timeline-title">AI/ML Intern</h4>
+                                                    <h4 class="timeline-title">AI/ML Intern, Take It Smart Opc Pvt Lmtd
+                                                    </h4>
                                                     <p class="timeline-text">
-                                                    <ul style="list-style-type: disc;">
+                                                    <ul style="list-style-type: disc; color: var(--text-black-700);">
                                                         <li>
                                                             Gained valuable experience working with Python and applying
                                                             various machine learning algorithms
@@ -247,7 +257,7 @@
                     </div>
                 </div>
             </section>
-            <sect   ion class="certifications section">
+            <section class="certifications section" id="certificate">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -293,8 +303,8 @@
                         </div>
                     </div>
                 </div>
-            </sect>
-            <section class="project section ">
+            </section>
+            <section class="project section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -377,7 +387,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact section">
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -403,7 +413,8 @@
                             <p>usmansk008@gmail.com</p>
                         </div>
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fab fa-instagram" style="color: var(--skin-color); font-size: 25px;"></i></div>
+                            <div class="icon"><i class="fab fa-instagram"
+                                    style="color: var(--skin-color); font-size: 25px;"></i></div>
                             <h4>Instagram</h4>
                             <p>instagram.com/usmanshaikhh</p>
                         </div>
@@ -449,7 +460,24 @@
             </section>
         </div>
     </div>
-
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/style-switcher.js"></script>
     <script src="js/script.js"></script>
 </body>
 
